@@ -1,0 +1,187 @@
+<html>
+<head>
+    <title>William Butler's Project Title Screen</title>
+  
+    
+ 
+    
+</head>
+
+    
+<body onload="init();" bgcolor="sky blue">
+   
+    
+    <div class="subdiv">
+        <canvas id="MyCanvas1" width="1900" height="900">
+  </canvas>
+          </div>
+   
+    
+    <button type="reset" value="Reset">Reset</button>
+  
+    <canvas id="myCanvas" width="578" height="150"></canvas>
+    <script>
+      
+    </script>
+    
+    
+    <style>
+        canvas{border: 0px solid #bbb;}
+        .subdiv{width: 1900px;}
+        .text{margin: auto; width: 1900px;}
+    </style>
+ 
+        <script type="text/javascript">
+       
+            
+        var can, ctx, step = 50, steps = 60; 
+              delay = 20;      
+        var rgbstep = 10;
+        
+        function init() {
+            can = document.getElementById("MyCanvas1");
+    
+            ctx= can.getContext("2d");
+            ctx.textBaseline = "middle";
+            Textfadeup();        }
+ 
+                      
+            function init() {
+            can = document.getElementById("MyCanvas1");
+    
+            ctx= can.getContext("2d");
+            ctx.textBaseline = "middle";
+            Textfadeup();        }
+             
+            
+            function Textfadeup() {
+            rgbstep++;
+            ctx.beginPath();  
+            ctx.fillStyle= "#000000";
+            ctx.fillRect(730,370,600,200);
+            ctx.fillStyle = "rgb(" + rgbstep + "," + rgbstep + "," + rgbstep + ")"
+            ctx.font = "50pt Impact";
+            ctx.fillText ("The Movie Whiz Quiz",750,430);
+            ctx.font = "20pt Impact";
+            ctx.fillText ("By William Butler",930,480);
+            ctx.rect(730,360,600,210);
+            ctx.lineWidth = 25;
+            ctx.strokeStyle= "#FF0000";
+            ctx.stroke();
+            ctx.fillStyle= "#FFFFFF";
+            ctx.fillRect(720,350,20,20);
+            ctx.fillRect(770,350,20,20);
+            ctx.fillRect(820,350,20,20);
+            ctx.fillRect(870,350,20,20);
+            ctx.fillRect(920,350,20,20);
+            ctx.fillRect(970,350,20,20);
+            ctx.fillRect(1020,350,20,20);
+            ctx.fillRect(1070,350,20,20);
+            ctx.fillRect(1120,350,20,20);
+            ctx.fillRect(1170,350,20,20);
+            ctx.fillRect(1220,350,20,20);
+            ctx.fillRect(1270,350,20,20);
+            ctx.fillRect(1320,350,20,20);
+            
+                
+            ctx.fillRect(720,560,20,20);
+            ctx.fillRect(770,560,20,20);
+            ctx.fillRect(820,560,20,20);
+            ctx.fillRect(870,560,20,20);
+            ctx.fillRect(920,560,20,20);
+            ctx.fillRect(970,560,20,20);
+            ctx.fillRect(1020,560,20,20);
+            ctx.fillRect(1070,560,20,20);
+            ctx.fillRect(1120,560,20,20);
+            ctx.fillRect(1170,560,20,20);
+            ctx.fillRect(1220,560,20,20);
+            ctx.fillRect(1270,560,20,20);
+            ctx.fillRect(1320,560,20,20);
+            
+                
+            ctx.fillRect(720,400,20,20);
+            ctx.fillRect(720,450,20,20);
+            ctx.fillRect(720,500,20,20);
+            
+             
+            ctx.fillRect(1320,400,20,20);
+            ctx.fillRect(1320,450,20,20);
+            ctx.fillRect(1320,500,20,20);
+            ctx.font = "30pt helvetica";
+              ctx.fillText ("Click Here!",930,620); 
+            if (rgbstep < 455)
+                var t = setTimeout('Textfadeup()', 10);
+            if (rgbstep == 255) {
+                Textfadedown();
+            }
+        }
+        function Textfadedown() {
+rgbstep=rgbstep-1;
+       
+            ctx.fillStyle= "#000000";
+            ctx.fillRect(730,370,600,200);
+            ctx.fillStyle = "rgb(" + rgbstep + "," + rgbstep + "," + rgbstep + ")"
+            ctx.font = "50pt Impact";
+            ctx.fillText ("The Movie Whiz Quiz",750,430);
+            ctx.font = "20pt Impact";
+            ctx.fillText ("By William Butler",930,480);
+            ctx.rect(730,360,600,210);
+            ctx.lineWidth = 25;
+            ctx.strokeStyle= "#FF0000";
+            ctx.stroke();
+            ctx.fillStyle= "#FFFF00";
+            ctx.fillRect(720,350,20,20); 
+            ctx.fillRect(770,350,20,20);
+            ctx.fillRect(820,350,20,20);
+            ctx.fillRect(870,350,20,20);
+            ctx.fillRect(920,350,20,20);
+            ctx.fillRect(970,350,20,20);
+            ctx.fillRect(1020,350,20,20);
+            ctx.fillRect(1070,350,20,20);
+            ctx.fillRect(1120,350,20,20);
+            ctx.fillRect(1170,350,20,20);
+            ctx.fillRect(1220,350,20,20);
+            ctx.fillRect(1270,350,20,20)
+            ctx.fillRect(1320,350,20,20);
+            
+            
+            ctx.fillRect(720,560,20,20);
+            ctx.fillRect(770,560,20,20);
+            ctx.fillRect(820,560,20,20);
+            ctx.fillRect(870,560,20,20);
+            ctx.fillRect(920,560,20,20);
+            ctx.fillRect(970,560,20,20);
+            ctx.fillRect(1020,560,20,20);
+            ctx.fillRect(1070,560,20,20);
+            ctx.fillRect(1120,560,20,20);
+            ctx.fillRect(1170,560,20,20);
+            ctx.fillRect(1220,560,20,20);
+            ctx.fillRect(1270,560,20,20);
+            ctx.fillRect(1320,560,20,20);
+            
+            
+            
+            ctx.fillRect(720,400,20,20);
+            ctx.fillRect(720,450,20,20);
+            ctx.fillRect(720,500,20,20);
+            
+            
+            ctx.fillRect(1320,400,20,20);
+            ctx.fillRect(1320,450,20,20);
+            ctx.fillRect(1320,500,20,20);
+            
+            if (rgbstep > 60)
+                var t = setTimeout('Textfadedown()', 10);
+            if (rgbstep == 10) {
+                Textfadeup();
+            }
+        }  
+     
+        </script>
+       
+       
+   
+       
+    
+</body>
+</html>
